@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-center text-5xl mt-10">Let's get some <span
+                class="font-semibold text-violet-500">Mooooooooney</span>!!!
+        </h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 text-white mt-10">
+            <div class="bg-green-400 rounded-xl p-8">
+                <h4 class="text-2xl">Deposit</h4>
+                <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-orange-400 rounded-xl p-8">
+                <h4 class="text-2xl">Withdraw</h4>
+                <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-violet-400 rounded-xl p-8">
+                <h4 class="text-2xl">Balance</h4>
+                <h2 class="text-5xl">$<span id="balance-total">1200</span></h2>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 text-white mt-10">
+                <div class="bg-green-400 rounded p-5">
+                    <h4 class="text-2xl">Please Deposit</h4>
+                    <input id="deposit-field" type="text" placeholder="Enter your amount"
+                        class="px-5 py-3 rounded-xl mt-5 text-black">
+                    <br>
+                    <button id="btn-deposit"
+                        class="bg-violet-600 px-5 py-3 rounded-md mt-2 hover:bg-sky-600">Deposit</button>
+                </div>
+                <div class="bg-red-400 rounded p-5">
+                    <h4 class="text-2xl">Please Withdraw</h4>
+                    <input id="withdraw-field" type="text" placeholder="Enter your amount"
+                        class=" px-5 py-3 rounded-xl mt-5 text-black">
+                    <br>
+                    <button id="btn-withdraw"
+                        class="bg-violet-600 px-5 py-3 rounded-md mt-2 hover:bg-sky-600">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
